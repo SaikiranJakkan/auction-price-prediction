@@ -38,7 +38,8 @@ function App() {
       .then((data) => {
         setResult(data);
         console.log(data);
-      });
+      })
+      .catch((e) => console.log(e));
   }
 
   return (
