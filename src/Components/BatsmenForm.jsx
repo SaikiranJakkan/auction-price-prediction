@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import styles from './styles.module.css';
 const BatsmenForm = () => {
-  const [runs, setRuns] = useState(undefined);
-  const [ballsFaced, setBallsFaced] = useState(undefined);
-  const [battingAvg, setBattingAvg] = useState(undefined);
-  const [strikeRate, setStrikeRate] = useState(undefined);
+  const [runs, setRuns] = useState(0);
+  const [ballsFaced, setBallsFaced] = useState(0);
+  const [battingAvg, setBattingAvg] = useState(0);
+  const [strikeRate, setStrikeRate] = useState(0);
   const [result, setResult] = useState({ price: 0, accuracy: 0 });
 
   //   value={runs} onChange={setRuns}

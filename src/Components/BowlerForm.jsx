@@ -2,10 +2,10 @@ import { useState } from 'react';
 import styles from './styles.module.css';
 
 const BatsmenForm = () => {
-  const [ballsBowled, setBallsBowled] = useState(undefined);
-  const [bowlingAvg, setBowlingAvg] = useState(undefined);
-  const [economy, setEconomy] = useState(undefined);
-  const [wickets, setWickets] = useState(undefined);
+  const [ballsBowled, setBallsBowled] = useState(0);
+  const [bowlingAvg, setBowlingAvg] = useState(0);
+  const [economy, setEconomy] = useState(0);
+  const [wickets, setWickets] = useState(0);
   const [result, setResult] = useState({ price: 0, accuracy: 0 });
   // value={runs} onChange={setRuns}
   function handleSubmit(e) {
@@ -33,7 +33,7 @@ const BatsmenForm = () => {
         <label>Balls Faced</label>
         <input
           type='number'
-          value={ballsBowled}
+          // value={ballsBowled}
           onChange={(e) => setBallsBowled(e.target.value)}
           placeholder='Balls Faced'
         />
@@ -42,7 +42,7 @@ const BatsmenForm = () => {
         <label>Average</label>
         <input
           type='number'
-          value={bowlingAvg}
+          // value={bowlingAvg}
           onChange={(e) => setBowlingAvg(e.target.value)}
           placeholder='Average'
         />
@@ -51,7 +51,7 @@ const BatsmenForm = () => {
         <label>Economy</label>
         <input
           type='number'
-          value={economy}
+          // value={economy}
           onChange={(e) => setEconomy(e.target.value)}
           placeholder='Economy'
         />
@@ -60,7 +60,7 @@ const BatsmenForm = () => {
         <label>Wickets</label>
         <input
           type='number'
-          value={wickets}
+          // value={wickets}
           onChange={(e) => setWickets(e.target.value)}
           placeholder='Wickets'
         />
