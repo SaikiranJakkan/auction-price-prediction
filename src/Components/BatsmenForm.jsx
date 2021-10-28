@@ -69,9 +69,11 @@ const BatsmenForm = () => {
         SUBMIT
       </button>
       <h3>
-        {result?.price > 0 && result?.price?.toFixed(3)}
+        {result?.price > 0 &&
+          'Rs. ' + result?.price?.toFixed(3).toString() + '/- Lakhs'}
         <br />
-        {result?.price > 0 && result?.accuracy?.toFixed(3)}
+        {result?.price > 0 &&
+          'Accuracy ' + (result?.accuracy?.toFixed(3) * 100).toString() + '%'}
       </h3>
     </form>
   );

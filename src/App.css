@@ -1,8 +1,11 @@
 .container {
-  width: 50%;
+  width: 100%;
   margin: auto;
   text-align: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  /* background-color: red;  */
+  /* padding: 0 2rem; */
+  height: 100vh;
 }
 
 .toggle-btn {

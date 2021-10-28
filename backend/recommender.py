@@ -1,4 +1,5 @@
 from flask.json import jsonify
+from numpy.random.mtrand import randint
 import pandas as pd
 import numpy as np
 from sklearn.impute import SimpleImputer
@@ -50,4 +51,5 @@ def make_recommendation(flag, searchTerms):
         if (flag)
         else make_recommendation_bowlers(searchTerms)
     )
-    return jsonify({"price": auction_price, "accuracy": 0.823})
+
+    return jsonify({"price": abs(auction_price), "accuracy": abs(0.823)})
